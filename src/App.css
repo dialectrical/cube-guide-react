@@ -1,0 +1,26 @@
+.ms-r {
+  color: rgb(211, 32, 42);
+}
+
+.ms-g {
+  color: rgb(0, 115, 62);
+}
+
+.ms-u {
+  color: rgb(14, 104, 171);
+}
+
+.ms-w {
+  color: rgb(249, 250, 244);
+}
+
+.ms-b {
+  color: rgb(21, 11, 0);
+}
+
+.card-bank {
+  display: flex;
+  flex-direction: row | column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
