@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 const mtg = require('mtgsdk');
 
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getelementById("modal101").style.dispaly = "block";
+}
 
 class CardImage extends React.Component {
   constructor(props) {
@@ -29,7 +33,7 @@ class CardImage extends React.Component {
 
     return (
       <div>
-        <img src={this.state.card} />
+        <img className='card-image' src={this.state.card} />
       </div>
     );
   }
@@ -88,6 +92,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Heading 1 <i class="ms ms-g"></i></h1>
+        <img id="cover" src="https://64.media.tumblr.com/30fefcc8ce043413560f125796b032c2/tumblr_inline_ozshulJOFb1sao0wy_1280.jpg" />
         <h2>Heading 2 <i class="ms ms-r"></i></h2>
         <h3>Heading 3 <i class="ms ms-u"></i></h3>
         <h4>Heading 4 <i class="ms ms-b"></i></h4>
